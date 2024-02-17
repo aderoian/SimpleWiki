@@ -1,0 +1,100 @@
+.NavSideBar {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 350px;
+    height: 100%;
+    background-color: var(--background-secondary-color);
+    overflow: hidden;
+}
+
+.NavHeader {
+    height: 145px;
+    padding: 10px 0 0 0;
+
+    text-align: center;
+}
+
+.NavHeaderTitle {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: var(--text-secondary-color);
+}
+
+.NavHeaderSearch {
+    width: 200px;
+    padding: 5px;
+    margin: 15px auto 0 auto;
+    border-radius: 20px;
+    background-color: #b0b0b0;
+}
+
+.NavTree {
+    overflow: scroll;
+    height: 100%;
+}
+
+.Tree_Category {
+
+}
+
+.Tree_Item {
+    display: grid;
+    justify-content: start;
+    grid-template-areas: "spacer icon content";
+    height: 36px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+.Tree_Category_Item {
+    display: grid;
+    justify-content: start;
+    grid-template-areas: "spacer content";
+    width: 100%;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+.Tree_Item_Icon {
+    display: flex;
+    grid-area: icon;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.Item_Content_Icon {
+    display: flex;
+    grid-area: icon;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+
+.Tree_Item_Spacer {
+    grid-area: spacer;
+    display: flex;
+    height: 100%;
+}
+
+.Tree_Item_Content {
+    grid-area: content;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 1rem;
+    color: var(--text-secondary-color);
+}
+
+.Tree_Item:hover {
+    background-color: rgb(56, 56, 56)
+}
+
+.Tree_Category_Item:hover {
+    background-color: rgb(56, 56, 56)
+}

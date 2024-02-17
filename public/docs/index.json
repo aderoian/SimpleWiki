@@ -1,0 +1,35 @@
+{
+  "name": "root",
+  "files": [
+    "test",
+    "home"
+  ],
+  "categories": [
+    {
+      "name": "Category1-1",
+      "files": [
+        "test_category"
+      ],
+      "categories": [{
+        "name": "Category2-1",
+        "files": [
+          "zzzzz"
+        ],
+        "categories": []
+      }]
+    },
+    {
+      "name": "Category1-2",
+      "files": [
+        "test_category"
+      ],
+      "categories": [{
+        "name": "Category2",
+        "files": [
+          "zzzzz"
+        ],
+        "categories": []
+      }]
+    }
+  ]
+}
