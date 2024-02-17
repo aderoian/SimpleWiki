@@ -19,11 +19,10 @@ export function updateHidden(category: Category, searchParam: string): boolean {
     return category.hidden;
 }
 
-export class File {
-    public name: string | undefined;
-    public hidden: boolean = false
+export function formatCategoryName(name: string): string {
+    return name[0].toUpperCase() + name.substring(1);
+}
 
-    public updateHidden(searchParam: string): boolean {
-        return (this.hidden = this.name?.includes(searchParam) ?? false);
-    }
+export function formatFileName(name: string): string {
+    return name.split('_').map(s => s[0].toUpperCase() + s.substring(1)).join(' ');
 }

@@ -2,7 +2,7 @@ import React from "react";
 import {NavPage} from "@components/nav/NavPage.tsx";
 import {SlArrowDown, SlArrowRight} from "react-icons/sl";
 import {FaFolder, FaFolderOpen} from "react-icons/fa";
-import {Category} from "@app/backend/FileTree.ts";
+import {Category, formatCategoryName} from "@app/backend/FileTree.ts";
 
 interface IState {
     open: boolean
@@ -40,7 +40,7 @@ class NavCategory extends React.Component<IProps, IState> {
                         <div className={"Item_Content_Icon"}>
                             {this.state.open ? <FaFolderOpen style={iconStyles}/> : <FaFolder style={iconStyles}/>}
                         </div>
-                        {this.props.category.name}
+                        {formatCategoryName(this.props.category.name ?? "")}
                     </div>
                 </div>
 
