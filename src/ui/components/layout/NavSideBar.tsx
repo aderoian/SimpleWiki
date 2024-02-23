@@ -23,7 +23,7 @@ class NavSideBar extends React.Component<IProps, IState> {
     }
 
     componentDidMount() {
-        fetch("/docs/index.json")
+        fetch("/SimpleWiki/docs/index.json")
             .then(res => res.json()
                 .then(data => {
                     this.setState({
