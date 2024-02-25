@@ -40,7 +40,7 @@ class NavSideBar extends React.Component<IProps, IState> {
         return (
             <div className={"NavSideBar"}>
                 <div className={"NavHeader"}>
-                    <h1 className={"NavHeaderTitle"}>Contents</h1>
+                    <h1 className={"NavHeaderTitle"}>{import.meta.env.VITE_APP_NAME}</h1>
                     <input className={"NavHeaderSearch"} type={"text"} placeholder={"Search"}
                            onChange={event => this.setState({searchValue: event.target.value})}/>
                 </div>
