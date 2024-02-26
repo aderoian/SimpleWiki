@@ -12,7 +12,7 @@ export function WikiPage () {
         if (location.endsWith("/"))
             path = location.substring(0, location.length - 1)
 
-        fetch("/SimpleWiki/docs" + path + ".md")
+        fetch(`/${import.meta.env.VITE_APP_PATH}/docs${path}.md`)
             .then(res => res.text())
             .then((content) => setContent(content), () => setContent('Error.'));
     }, [location])
@@ -31,7 +31,7 @@ export function HomePage () {
 
     useEffect(() => {
         const filename = "home.md"
-        fetch("/SimpleWiki/docs/" + filename)
+        fetch(`/${import.meta.env.VITE_APP_PATH}/docs/${filename}`)
             .then(res => res.text())
             .then((content) => setContent(content), () => setContent('Error.'));
     })

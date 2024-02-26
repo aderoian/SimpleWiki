@@ -2,11 +2,12 @@
  Dark (default) theme colors
  */
 html {
-  --background-primary-color: #2a2a2a;
-  --background-secondary-color: #1e1e1e;
+  --background-primary-color: #292b34;
+  --background-secondary-color: #1a1c23;
 
-  --text-primary-color: #b7b7b7;
+  --text-primary-color: #ffffff;
   --text-secondary-color: #A6A6A6;
+  --text-accent-color: #e8cd61;
 
   --scrollbar_color: #b9b9b9;
 
