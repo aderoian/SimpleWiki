@@ -8,7 +8,7 @@ import Cookies from "js-cookie";
 export default function App() {
     const [loggedIn, setLoggedIn] = useState(isLoggedIn())
 
-    if (!import.meta.env.VITE_APP_LOCKED) return renderApp();
+    if (import.meta.env.VITE_APP_LOCKED == "false") return renderApp();
 
     return (!loggedIn) ? <LoginPanel onLogin={() => {
         setLoggedIn(true)
