@@ -4,6 +4,7 @@ import * as path from 'path';
 const source = "./public/docs"
 
 function indexCategory(name, source) {
+    console.log("Indexing category: " + name + " at " + source);
     const category = {name: name, categories: [], files: []}
     const files = fs.readdirSync(source);
     files.forEach((file) => {
@@ -18,6 +19,7 @@ function indexCategory(name, source) {
 
     })
 
+    console.log("Indexed " + category.categories.length + " categories and " + category.files.length + " files for category: " + name);
     return category;
 }
 
