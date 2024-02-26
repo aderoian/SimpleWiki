@@ -46,7 +46,8 @@ export function HomePage () {
 export function NotFound() {
     return (
         <div className={"NotFound"}>
-            404 The page does not exist.
+            <h1>404</h1>
+            <p>Page not found.</p>
         </div>
     )
 }

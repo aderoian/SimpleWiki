@@ -19,10 +19,6 @@ export function updateHidden(category: Category, searchParam: string): boolean {
     return category.hidden;
 }
 
-export function formatCategoryName(name: string): string {
-    return name[0].toUpperCase() + name.substring(1);
-}
-
-export function formatFileName(name: string): string {
+export function formatListEntryName(name: string): string {
     return name.split('_').map(s => s[0].toUpperCase() + s.substring(1)).join(' ');
 }

@@ -1,6 +1,6 @@
 import {useNavigate} from "react-router-dom";
 import {FaFileAlt} from "react-icons/fa";
-import {formatFileName} from "@app/backend/FileTree.ts";
+import {formatListEntryName} from "@app/backend/FileTree.ts";
 
 interface IProps {
     name: string
@@ -19,7 +19,7 @@ export function NavPage(props: IProps) {
                 <div className={"Item_Content_Icon"}>
                     <FaFileAlt style={{height: "18px", width: "18px"}}/>
                 </div>
-                {formatFileName(props.name)}
+                {formatListEntryName(props.name)}
             </div>
         </div>
     )
