@@ -29,6 +29,32 @@ body {
   }
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+td {
+  border: 1px solid #707172;
+  padding: 8px;
+}
+
+code {
+  font-family: 'Poppins', monospace;
+  background-color: rgb(54, 54, 54);
+  border: 1px solid rgb(89, 89, 89);
+  border-radius: 4px;
+  white-space: pre-wrap;
+  padding: .125rem;
+}
+
+pre {
+  margin: 0;
+  font-family: 'Poppins', monospace;
+  white-space: pre-wrap;
+}
+
 ::-webkit-scrollbar {
   height: 7px;
   width: 7px;
@@ -67,6 +93,7 @@ body {
   padding: 30px;
   background-color: var(--background-primary-color);
   color: var(--text-primary-color);
+  overflow: scroll;
 }
 
 * {

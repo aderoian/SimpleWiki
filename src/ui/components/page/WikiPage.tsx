@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import Markdown from "react-markdown";
 import {useLocation} from "react-router-dom";
 import remarkGfm from "remark-gfm";
+import "@css/page/WikiPage.css";
 
 
 export function WikiPage () {
@@ -22,7 +23,7 @@ export function WikiPage () {
 
     return (
         <div className={"WikiPage"}>
-            <Markdown>{content}</Markdown>
+            <Markdown remarkPlugins={[remarkGfm]}>{content}</Markdown>
         </div>
     )
 }
